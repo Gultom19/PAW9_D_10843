@@ -25,8 +25,8 @@
         <v-card>
             <v-data-table :headers="headers" :items="todos" :search="search">
                 <template v-slot:[`item.actions`]="{ item }">
-                    <v-btn small class="mr-2 blue-grey lighten-3" @click="editItem(item)">edit</v-btn>
-                    <v-btn small class="mr-2 blue-grey lighten-3" @click="deleteItem(item)">delete</v-btn>
+                    <v-btn small class="mr-2 blue-grey lighten-3" @click="editItem(Icon icon="ooui:edit")">edit</v-btn>
+                    <v-btn small class="mr-2 blue-grey lighten-3" @click="deleteItem(Icon icon="ooui:trash")">delete</v-btn>
                 </template>
             </v-data-table>
         </v-card>
